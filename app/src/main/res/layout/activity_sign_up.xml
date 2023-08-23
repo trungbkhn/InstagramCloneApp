@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ui"
+    tools:context=".SignUpActivity">
+    <ImageView
+        android:id="@+id/img_icon_insta"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:src="@drawable/instagram"
+        app:tint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp">
+
+    </ImageView>
+    <EditText
+        android:id="@+id/edt_fullname_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@id/img_icon_insta"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textEmailAddress"
+        android:hint="Full Name">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edt_username_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/edt_fullname_singup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textEmailAddress"
+        android:hint="UserName">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edt_email_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/edt_username_singup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edt_password_singup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/edt_email_singup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="6dp"
+        android:inputType="textPassword"
+        android:hint="PassWord">
+
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons_background"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_below="@+id/edt_password_singup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="6dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:hint="Register">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signin_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="6dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:hint="Already have an Account? Sign In?">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>
